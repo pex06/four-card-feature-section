@@ -1,0 +1,149 @@
+:root {
+  /* Colores */
+
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+  --dark-blue: hsl(234, 12%, 34%);
+  --grayish-blue: hsl(229, 6%, 66%);
+  --light-gray: hsl(0, 0%, 98%);
+
+  /* Font Size */
+
+  font-size: 0.9375rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--light-gray);
+}
+
+.header {
+  margin: 5em 0;
+  text-align: center;
+}
+
+.title,
+.card__title {
+  margin-bottom: 0.5em;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+.subtitle,
+.card__title {
+  color: var(--dark-blue);
+}
+
+.subtitle,
+.card__text {
+  margin-top: 0;
+}
+
+/* ! Modificar */
+
+.text,
+.card__text {
+  color: var(--grayish-blue);
+}
+
+/* ! */
+
+.text {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cards {
+  margin-bottom: 5em;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 310px;
+  height: 230px;
+  padding: 1em;
+  margin: 0 auto 2em auto;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 8px 15px;
+}
+
+.card-1 {
+  border-top: 5px solid var(--cyan);
+}
+
+.card-2 {
+  border-top: 5px solid var(--red);
+}
+
+.card-3 {
+  border-top: 5px solid var(--orange);
+}
+
+.card-4 {
+  border-top: 5px solid var(--blue);
+}
+
+.card__image {
+  align-self: flex-end;
+  margin: 1em 1em 0 0;
+}
+
+.attribution {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5.5em;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution__link {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 1080px) {
+  body {
+    overflow: hidden;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1.95rem;
+  }
+
+  .text {
+    width: 500px;
+  }
+
+  .cards {
+    display: flex;
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .card-1,
+  .card-4 {
+    margin-top: 5em;
+  }
+
+  .attribution {
+    bottom: 8.5em;
+  }
+}
